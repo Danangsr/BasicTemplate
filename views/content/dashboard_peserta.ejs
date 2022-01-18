@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="/images/template/shortcut_icon.ico">
+    <title></title>
+
+    <link href="/stylesheets/template/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/stylesheets/template/css/style.css" rel="stylesheet">
+    <link href="/stylesheets/template/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <!-- Plugin This Page --> 
+    <!-- End Plugins This Page -->
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+    .dropdown-toggle::after{
+        display: none;
+    }
+    </style>
+</head>
+
+<body>
+    <header style="box-shadow: 0 7px 20px 0 rgb(0,0,0,0.1);">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6 col-lg-6">
+                    <div style="width: 100%;height: 100px;display: flex;justify-content: flex-start;align-items: center;">
+                        <img src="https://via.placeholder.com/80" alt="">
+                        <div style="display: flex;flex-direction: column;margin-left: 15px;">
+                            <h6 class="mt-0 mb-0">KEMENTERIAN PEKERJAAN UMUM DAN PERUMAHAN RAKYAT</h6>
+                            <h6 class="mt-0 mb-0">DIREKTORAT JENDERAL BINA KONSTRUKSI</h6>
+                            <h5 class="mt-0 mb-0"><strong>BALAI JASA KONSTRUKSI WILAYAH III JAKARTA</strong></h5>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-6">
+                    <div style="width: 100%;height: 100px;display: flex;justify-content: flex-end;align-items: center;">
+                        <div class="dropdown">
+                            <a class="btn btn-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                              <img src="/images/template/user.png" alt="" style="width: 60px;">
+                            </a>
+                          
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
+                              <a class="dropdown-item" href="/">Logout</a>
+                            </div>
+                          </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    
+
+    <section style="padding: 60px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                    <h3 class="text-center"><strong>DASHBOARD</strong></h3>
+                </div>
+            </div>
+
+            <div class="row" style="margin-top: 30px;">
+                <div class="col-md-3 col-lg-3">
+                    <div class="card" style="padding-top: 30px;">
+
+                        <center><img src="/images/template/user.png" class="card-img-top" alt="..." style="width: 80%;"></center>
+                        
+                        <div class="card-body">
+                          <h5 class="card-title text-center"><strong>Nama Peserta</strong></h5>
+                          <!-- <h6 class="text-center m-t-0 m-b-0">081 123 456 789</h6> -->
+                          <h6 class="text-center m-t-0 m-b-15">exampleemail@gmail.com</h6>
+                          <!-- <hr>
+                          <center>
+                            <a href="#" class="btn btn-primary">Edit Profil</a>
+                          </center> -->
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-9 col-lg-9">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <div class="alert alert-danger" role="alert">
+                                <p>Silahkan lengkapi profil anda terlebih dahulu </p> 
+                                <button class="btn btn-primary" data-toggle="modal" data-target="#profil_peserta">Edit Profil</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-4 col-lg-4">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading m-b-0"><strong>PELATIHAN</strong></h4>
+                                <h6 class="m-t-0 m-b-15">YANG TERSEDIA</h6>
+                                <span data-toggle="modal" data-target="#pelatihan" style="cursor: pointer;">
+                                <h1 style="text-align: right;font-size: 48px;"><strong>00</strong></h1>
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-4">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading m-b-0"><strong>SERTIFIKASI</strong></h4>
+                                <h6 class="m-t-0 m-b-15">YANG TERSEDIA</h6>
+                                <h1 style="text-align: right;font-size: 48px;"><strong>00</strong></h1>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 col-lg-4">
+                            <div class="alert alert-primary" role="alert">
+                                <h4 class="alert-heading m-b-0"><strong>LIHAT HASIL</strong></h4>
+                                <h6 class="m-t-0" style="margin-bottom: 80px;">PELATIHAN & SERTIFIKASI</h6>
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <h3><strong>DETAIL PROFIL</strong></h3>
+                            <hr>
+                        </div>
+                        <div class="col-md-12 col-lg-12">
+                            <table class="table table-borderless table-sm">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 200px;">Nama</td>
+                                        <td style="width: 1px;">:</td>
+                                        <td></td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Alamat</td>
+                                        <td>:</td>
+                                        <td></td>
+
+                                    </tr>
+
+                                    <tr>
+                                        <td>No. Telepon</td>
+                                        <td>:</td>
+                                        <td></td>
+
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <footer style="background-color: #003171;padding: 15px 0;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-lg-12">
+                <h6 class="m-t-0 m-b-0 text-center" style="color: #fff;">Copyright © 2021 Direktorat Jenderal Bina Konstruksi</h6>
+                </div>
+            </div>
+
+            
+        </div>
+    </footer>
+
+    
+    <!-- Button trigger modal -->
+    
+  
+  <!-- Modal -->
+    <div class="modal fade" id="pelatihan" tabindex="-1" aria-labelledby="pelatihanLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header">
+            <h5 class="modal-title" id="pelatihanLabel">JADWAL PELATIHAN</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-md-12 col-lg-12">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>No.</th>
+                                    <th>Pelatihan</th>
+                                    <th>Tanggal Pelaksanaan</th>
+                                    <th>Lokasi</th>
+                                    <th>Option</th>
+                                </tr>
+                            </thead>
+
+                            <tbody>
+                                <tr>
+                                    <td>1.</td>
+                                    <td>Pelatihan A</td>
+                                    <td>06 April 2021 s/d 09 April 2021</td>
+                                    <td>Lokasi A</td>
+                                    <td><center><button class="btn btn-primary">Gabung</button></center></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+            <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <div id="profil_peserta" class="modal fade">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Modal title</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-12 col-lg-12">
+                            <form>
+                                <div class="form-group row">
+                                  <label class="col-sm-2 col-form-label">Nama</label>
+                                  <div class="col-sm-10">
+                                    <input type="text" class="form-control" id="">
+                                  </div>
+                                </div>
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Alamat</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">No. Telepon</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">Email</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+
+                                <div class="form-group row">
+                                    <label class="col-sm-2 col-form-label">No. KTP</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control" id="">
+                                    </div>
+                                </div>
+
+                                <!-- <div class="form-group row">
+                                  <div class="col-sm-10">
+                                    <a href="/peserta/dashboard" type="submit" class="btn btn-primary">Daftar</a>
+                                  </div>
+                                </div> -->
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button> -->
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="/javascripts/template/jquery.min.js"></script>
+    <script src="/javascripts/template/bootstrap.bundle.min.js"></script>
+    <!-- Plugins This Page -->
+    <!-- End Plugins This Page -->
+    <script type="text/javascript">
+    // $(document).ready(function(){
+	// 	$("#profil_peserta").modal('show');
+	// });
+    
+    </script>
+</body>
+</html>
